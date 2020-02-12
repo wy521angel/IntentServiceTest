@@ -18,8 +18,10 @@
         </activity>
 
         <activity android:name=".IntentServiceActivity" />
+        <activity android:name=".PicUploadActivity" />
 
         <service android:name=".LocalIntentService" />
+        <service android:name=".UploadImgService" />
     </application>
 
 </manifest>

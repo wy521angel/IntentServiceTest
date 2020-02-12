@@ -10,7 +10,7 @@ import android.widget.ListView;
 
 public class MainActivity extends ListActivity {
 
-    private String[] titles = {"IntentService的简单使用", ""};
+    private String[] titles = {"IntentService的简单使用", "模拟多图片上传案例"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,12 +27,9 @@ public class MainActivity extends ListActivity {
             case 0:
                 startActivity(new Intent(this, IntentServiceActivity.class));
                 break;
-//            case 1:
-//                startActivity(new Intent(this, IntentServiceActivity.class));
-//                break;
-//            case 2:
-//                startActivity(new Intent(this, ThreadLocalTestActivity.class));
-//                break;
+            case 1:
+                startActivity(new Intent(this, PicUploadActivity.class));
+                break;
         }
     }
 }
